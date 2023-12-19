@@ -174,25 +174,25 @@ function mainFunction(currentEvent) {
 
     if (currentEvent == "sqrt") {
       if (var2 != "") {
-        var2 = Math.sqrt(+var2).toFixed(4).toString();
+        var2 = Math.sqrt(+var2).toFixed(5).toString();
       } else if (var1 != "") {
-        var1 = Math.sqrt(var1).toFixed(4).toString();
+        var1 = Math.sqrt(var1).toFixed(5).toString();
       }
     }
 
     if (currentEvent == "log10") {
       if (var2 != "") {
-        var2 = Math.log10(+var2).toFixed(4).toString();
+        var2 = Math.log10(+var2).toFixed(5).toString();
       } else if (var1 != "") {
-        var1 = Math.log10(+var1).toFixed(4).toString();
+        var1 = Math.log10(+var1).toFixed(5).toString();
       }
     }
 
     if (currentEvent == "ln") {
       if (var2 != "") {
-        var2 = Math.log(+var2).toFixed(4).toString();
+        var2 = Math.log(+var2).toFixed(5).toString();
       } else if (var1 != "") {
-        var1 = Math.log(+var1).toFixed(4).toString();
+        var1 = Math.log(+var1).toFixed(5).toString();
       }
     }
 
@@ -213,30 +213,30 @@ function mainFunction(currentEvent) {
       if (var2 != "") {
         if (trig == "sin") {
           var2 = Math.sin((+var2 * Math.PI) / 180)
-            .toFixed(3)
+            .toFixed(5)
             .toString();
         } else if (trig == "cos") {
           var2 = Math.cos((+var2 * Math.PI) / 180)
-            .toFixed(3)
+            .toFixed(5)
             .toString();
         } else if (trig == "tan") {
           var2 = Math.tan((+var2 * Math.PI) / 180)
-            .toFixed(3)
+            .toFixed(5)
             .toString();
         }
       } else if (var1 != "") {
         if (var1 != "") {
           if (trig == "sin") {
             var1 = Math.sin((+var1 * Math.PI) / 180)
-              .toFixed(3)
+              .toFixed(5)
               .toString();
           } else if (trig == "cos") {
             var1 = Math.cos((+var1 * Math.PI) / 180)
-              .toFixed(3)
+              .toFixed(5)
               .toString();
           } else if (trig == "tan") {
             var1 = Math.tan((+var1 * Math.PI) / 180)
-              .toFixed(3)
+              .toFixed(5)
               .toString();
           }
         }
