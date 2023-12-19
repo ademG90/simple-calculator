@@ -72,7 +72,7 @@ function operation(operator, a, b) {
 const body = document.querySelector("body");
 const equationDisplay = document.querySelector(".equation");
 const resultDisplay = document.querySelector(".result");
-equationDisplay.textContent = "0";
+equationDisplay.textContent = "|";
 resultDisplay.textContent = "";
 const allBtn = document.querySelector(".buttons");
 
@@ -99,7 +99,7 @@ function mainFunction(currentEvent) {
       var1 = var1.toString().slice(0, -1);
     }
 
-    equationDisplay.textContent = ` ${var1} ${operator1} ${var2}`;
+    equationDisplay.textContent = ` ${var1}${operator1}${var2}|`;
     displayResult(var1, var2, operator1);
   } else {
     if (
@@ -243,7 +243,7 @@ function mainFunction(currentEvent) {
       }
     }
 
-    equationDisplay.textContent = ` ${var1} ${operator1} ${var2}`;
+    equationDisplay.textContent = `${var1}${operator1}${var2}|`;
     console.log(var1, var2, operator1);
     displayResult(var1, var2, operator1);
   }
