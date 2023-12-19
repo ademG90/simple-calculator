@@ -160,7 +160,7 @@ function mainFunction(currentEvent) {
         }
       }
     }
-    if (currentEvent == "negative") {
+    if (currentEvent.includes("+/-")) {
       if (operator1 != "") {
         if (var2 == "") {
           var2 = "-";
@@ -277,9 +277,9 @@ let var1 = "",
 // Listening for click event
 allBtn.addEventListener("click", (event) => {
   let currentEvent = event.target.textContent;
-  if (currentEvent == "+/-") {
-    currentEvent = "negative";
-  }
+  // if (currentEvent == "+/-") {
+  //   currentEvent = "negative";
+  // }
   mainFunction(currentEvent);
   event.stopPropagation();
 });

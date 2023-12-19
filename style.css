@@ -18,7 +18,7 @@
   width: 250px;
   height: 310px;
   /* background-color: antiquewhite; */
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(76, 76, 76);
   /* scroll-behavior: auto; */
   display: flex;
   flex-direction: column;
@@ -45,7 +45,9 @@
   border-top-right-radius: 5px;
   /* box-sizing: content-box; */
   /* border: 8px solid blueviolet; */
-  border: 6px solid rgb(181, 175, 175);
+  border: 6px solid rgb(76, 76, 76);
+  border-radius: 9px;
+  padding-right: 4px;
   /* border-top: 6px solid black; */
 }
 
@@ -110,5 +112,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(194, 201, 207);
+  background-color: rgb(158, 165, 172);
 }
