@@ -172,7 +172,7 @@ function mainFunction(currentEvent) {
       }
     }
 
-    if (currentEvent == "sqrt") {
+    if (currentEvent == "√") {
       if (var2 != "") {
         var2 = Math.sqrt(+var2).toFixed(5).toString();
       } else if (var1 != "") {
@@ -180,7 +180,7 @@ function mainFunction(currentEvent) {
       }
     }
 
-    if (currentEvent == "log10") {
+    if (currentEvent.includes("log")) {
       if (var2 != "") {
         var2 = Math.log10(+var2).toFixed(5).toString();
       } else if (var1 != "") {
@@ -188,7 +188,7 @@ function mainFunction(currentEvent) {
       }
     }
 
-    if (currentEvent == "ln") {
+    if (currentEvent == "ln()") {
       if (var2 != "") {
         var2 = Math.log(+var2).toFixed(5).toString();
       } else if (var1 != "") {
@@ -279,7 +279,6 @@ allBtn.addEventListener("click", (event) => {
   let currentEvent = event.target.textContent;
   if (currentEvent == "+/-") {
     currentEvent = "negative";
-    console.log(currentEvent);
   }
   mainFunction(currentEvent);
   event.stopPropagation();
