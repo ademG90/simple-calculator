@@ -7,7 +7,10 @@
 .main-container {
   width: 100%;
   height: 95vh;
-  background-image: linear-gradient(green, yellow, red, blue, orange);
+  background-image: linear-gradient(
+    rgba(0, 128, 0, 0.684),
+    rgba(255, 255, 0, 0.444)
+  );
   display: flex;
   align-items: center;
   justify-content: center;
